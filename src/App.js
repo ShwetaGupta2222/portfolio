@@ -1,13 +1,15 @@
 import './style.scss';
-import image from './img/babyyy.jpg'
-import {Education,Projects,Skills,Navbar,Coding,Contact} from './components'
+import {Education,Projects,Skills,Navbar,Coding,Contact,Theme} from './components'
+import { useTheme } from './context/ThemeContext';
 function App() {
+  const {theme} = useTheme();
   return (
-    <div class='main'>
+    <div class={`main ${theme?"cool":"warm"}`}>
+    <Theme/>
     <Navbar />
-    <div className="container">
-       <img src={image} alt=""/>
-       <div className='name'>Shweta Gupta</div>
+    <div className={`container ${theme?"cool6":"warm"}`}>
+       <div className={`${theme?"cool4":"img"}`}></div>
+       <div className={`name ${theme?"cool":"warm"}`}>Shweta Gupta</div>
        <div className='text'>
        <div>Comptative Programmer</div> 
       </div>
@@ -15,7 +17,7 @@ function App() {
        <div>Full Stack Developer</div> 
       </div>
     </div>
-      <div className='img-bottom'></div>
+      <div className={`img-bottom ${theme?"cool1":"warm"}`}></div>
     <Education />
     <Projects />
     <Coding/>

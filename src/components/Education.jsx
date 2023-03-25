@@ -1,10 +1,12 @@
 import React from 'react'
+import { useTheme } from '../context/ThemeContext';
 
-const Education = () => {
+function Education() {
+  const {theme} = useTheme();
   return (
     <div class='education' id="education">
       <h1 className='heading'>My Education</h1>
-      <div className="box">
+      <div className={`box ${theme?"cool":"warm"}`}>
          <div className='first'>
            <p>Harcourt Butler Technical University</p>
            <span>Btech Computer Science & Engineering</span>
@@ -14,7 +16,7 @@ const Education = () => {
           <span>Kanpur, UP</span>
           </div>
       </div>
-      <div className="box">
+      <div className={`box ${theme?"cool":"warm"}`}>
          <div className='first'>
            <p>Government Polytechnic Lucknow</p>
            <span>Information Technology</span>

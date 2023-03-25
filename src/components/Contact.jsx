@@ -1,10 +1,12 @@
 import React from 'react'
+import { useTheme } from '../context/ThemeContext';
 
-const Contact = () => {
+function Contact() {
+  const {theme} = useTheme();
   return (
-    <div className='contact' id="contact">
+    <div className={`contact ${theme?"cool3":"warm"}`} id="contact">
         <div className="first">
-        <h3>Available for select opportunities</h3>
+        <h2>Available for select opportunities</h2>
         <p>Have an exciting project you need help with?
         Send me an email or contact me via instant message!</p>
         </div>
