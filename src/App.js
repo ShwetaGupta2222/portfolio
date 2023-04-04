@@ -11,7 +11,7 @@ function App() {
        <div className={`${theme?"cool4":"img"}`}></div>
        <div className={`name ${theme?"cool":"warm"}`}>Shweta Gupta</div>
        <div className='text'>
-       <div>Comptative Programmer</div> 
+       <div>Competitive Programmer</div> 
       </div>
       <div className='text1'>
        <div>Full Stack Developer</div> 
