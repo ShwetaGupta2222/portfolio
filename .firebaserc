@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "shweta-portfolio-98ba8"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }

@@ -1,6 +1,7 @@
 import './style.scss';
 import {Education,Projects,Skills,Navbar,Coding,Contact,Theme} from './components'
 import { useTheme } from './context/ThemeContext';
+import Work from './components/Work';
 function App() {
   const {theme} = useTheme();
   return (
@@ -18,9 +19,10 @@ function App() {
       </div>
     </div>
       <div className={`img-bottom ${theme?"cool1":"warm"}`}></div>
-    <Education />
-    <Projects />
+    <Work/>
     <Coding/>
+    <Projects />
+    <Education />
     <Skills/>
     <Contact/>
     </div>

@@ -15,7 +15,7 @@ function Contact() {
             <a href="https://www.linkedin.com/in/shweta-gupta-4955221b4/"><p>LinkedIn</p></a>
             <a href="https://github.com/ShwetaGupta2222"><p>Github</p></a>
             <a href="https://twitter.com/HbtuGupta"><p>Twitter</p></a>
-            <a href="#"><p>Instagram</p></a>
+            <a href="https://www.instagram.com/shwetagupta2222/"><p>Instagram</p></a>
         </div>
     </div>
   )

@@ -4,7 +4,7 @@ import { useTheme } from '../context/ThemeContext';
 function Education() {
   const {theme} = useTheme();
   return (
-    <div class='education' id="education">
+    <div class='education1' id="education">
       <h1 className='heading'>My Education</h1>
       <div className={`box ${theme?"cool":"warm"}`}>
          <div className='first'>
